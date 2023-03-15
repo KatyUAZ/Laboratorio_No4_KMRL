@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/txtSucursales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPozole"
+        android:paddingStart="10dp"
+        android:text="@string/sucursales"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btnLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdg1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#E9E12565"
+        android:minHeight="48dp"
+        android:text="@string/btnLlamar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSucursales"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgPozole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/pozole"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pozole"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/txtNumeros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSucursales"
+        android:padding="10dp"
+        android:text="@string/numTelefono"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rdg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumeros">
+
+        <RadioButton
+            android:id="@+id/rdbTel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/tel1"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:id="@+id/rdbTel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tel2"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbTel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tel3"
+            android:textSize="20sp" />
+    </RadioGroup>
+</RelativeLayout>

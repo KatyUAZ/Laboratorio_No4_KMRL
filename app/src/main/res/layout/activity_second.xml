@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pozoles"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/pozoles" />
+
+            <TextView
+                android:id="@+id/txtCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pozoles"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/cantidad"
+                android:textStyle="bold|italic"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <EditText
+                android:id="@+id/txtNumCant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCantidad"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:text="1"
+                tools:layout_editor_absoluteX="171dp"
+                tools:layout_editor_absoluteY="98dp" />
+
+            <TextView
+                android:id="@+id/txtTamaño"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNumCant"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tama_o"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <RadioGroup
+                android:id="@+id/rdgTam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTamaño">
+
+                <RadioButton
+                    android:id="@+id/rdbC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Chico" />
+
+                <RadioButton
+                    android:id="@+id/rdbM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mediano" />
+
+                <RadioButton
+                    android:id="@+id/rdbG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grande" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rdgTam"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tipo_de_pozole"
+                android:textStyle="bold|italic" />
+
+            <RadioGroup
+                android:id="@+id/rdgTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTipo">
+
+                <RadioButton
+                    android:id="@+id/rdbR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/rojo" />
+
+                <RadioButton
+                    android:id="@+id/rdbV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verde" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtExtras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rdgTipo"
+                android:layout_marginLeft="10dp"
+                android:text="@string/ingredientes_adicionales"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/checkLimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtExtras"
+                android:text="@string/limon" />
+
+            <CheckBox
+                android:id="@+id/checkCebolla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkLimon"
+                android:text="@string/cebolla" />
+
+            <CheckBox
+                android:id="@+id/checkRepollo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkCebolla"
+                android:text="@string/repollo" />
+
+            <CheckBox
+                android:id="@+id/checkRabano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkRepollo"
+                android:text="Rabanos" />
+
+            <Button
+                android:id="@+id/btnPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkRabano"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/enviar_pedido" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

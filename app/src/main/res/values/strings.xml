@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CACAHUAZINTLE</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">CACAHUAZINTLE</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="btnLlamar">Llamar</string>
+    <string name="previous">Previous</string>
+
+    <string name="sucursales">
+    \n<b>Suc. 1:</b> Zaragoza #213 Zona Centro, Calvillo Ags.
+        \n<b>Suc. 2:</b> Blvd. Rodolfo Landeros #150 Calvillo, Ags.
+    \n<b>Suc. 3:</b> Av. Aguascalientes Sur #436 Local 9-A Col.España, Ags.</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pozole">TODO</string>
+    <string name="tel1">495 956 1635</string>
+    <string name="tel2">495 956 7228</string>
+    <string name="tel3">449 320 6501</string>
+    <string name="numTelefono">Números de Contacto:</string>
+    <string name="cantidad">Cantidad de pozoles:</string>
+    <string name="nuevo_pedido">Nuevo Pedido</string>
+    <string name="tama_o">Tamaño de pozole:</string>
+    <string name="tipo_de_pozole">Tipo de Pozole:</string>
+    <string name="rojo">Rojo</string>
+    <string name="verde">Verde</string>
+    <string name="limon">Limon</string>
+    <string name="cebolla">Cebolla</string>
+    <string name="repollo">Repollo</string>
+    <string name="enviar_pedido">Enviar Pedido</string>
+    <string name="ingredientes_adicionales">Ingredientes Adicionales:</string>
+</resources>
